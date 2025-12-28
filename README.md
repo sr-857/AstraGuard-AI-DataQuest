@@ -3,8 +3,7 @@
   <img src="assets/logo.png" width="350" alt="AstraGuard AI Logo">
   <br />
 
-# 🛰️ AstraGuard AI
-
+# 🛰️ AstraGuard AI - Synaptix Frontier AI Hack
 **Autonomous Fault Detection & Recovery for CubeSats**
 *Powered by Pathway's Streaming Engine & Biologically-Inspired Memory*
 
