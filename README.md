@@ -36,30 +36,6 @@ AstraGuard AI is an intelligent autonomous system designed to protect CubeSats f
 
 ---
 
-## ⚡ System Preview
-
-> *[Tip: Place a GIF here showing the Dashboard detecting an anomaly and the Agent auto-correcting it]*
-
----
-
-## 🏆 Innovation & Differentiators
-
-We moved beyond static RAG to build a system that *learns* from the stream.
-
-| Feature | The Old Way (Static) | The AstraGuard Way (Adaptive) |
-| :--- | :--- | :--- |
-| **Data Processing** | Batch processing (slow) | **Streaming Intelligence (5Hz)** via Pathway |
-| **Memory** | Static vector databases | **Evolving Memory** with decay & pruning |
-| **Response** | Passive Alerts | **Agentic Action** (detect → reason → act) |
-| **Explainability** | Black box "magic" | **Transparent Decision Traces** |
-| **User Interface** | Terminal logs | **Frontier Dashboard** with neural viz |
-
----
-<div align="center">
-  <img src="assets/logo.png" width="400" alt="AstraGuard AI Logo">
-</div>
-
-
 
 ## 🎯 What's Different Here
 
@@ -193,6 +169,20 @@ Live Input → Anomaly Detection → Memory Recall → Intelligent Decision → 
 - Continuous learning without retraining
 
 ---
+## 🏆 Innovation & Differentiators
+
+We moved beyond static RAG to build a system that *learns* from the stream.
+
+| Feature | The Old Way (Static) | The AstraGuard Way (Adaptive) |
+| :--- | :--- | :--- |
+| **Data Processing** | Batch processing (slow) | **Streaming Intelligence (5Hz)** via Pathway |
+| **Memory** | Static vector databases | **Evolving Memory** with decay & pruning |
+| **Response** | Passive Alerts | **Agentic Action** (detect → reason → act) |
+| **Explainability** | Black box "magic" | **Transparent Decision Traces** |
+| **User Interface** | Terminal logs | **Frontier Dashboard** with neural viz |
+
+---
+
 
 ## 🔬 Experimental Feature: Recurrence Resonance
 
