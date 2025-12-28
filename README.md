@@ -56,52 +56,545 @@ We moved beyond static RAG to build a system that *learns* from the stream.
 
 ---
 
-## 🏗️ Architecture
 
-AstraGuard relies on a modular, feedback-loop architecture. The system ingests telemetry, encodes it into vectors, and uses a biologically inspired "Dragon Hatchling" memory model to reason about the state of the satellite.
+
+## 🏗️ System Architecture
+
+
 
 ```mermaid
+
 graph TD
-    subgraph "Stream Ingestion"
-    A["🛰️ Telemetry Stream"] -->|Pathway Engine| B["📊 Embedding Encoder"]
-    end
 
-    subgraph "The Brain (Agentic Core)"
+    A["🛰️ Telemetry Stream (Pathway)"] -->|Live Data| B["📊 Embedding Encoder"]
+
     B -->|Vectors| C["🧠 Adaptive Memory Store"]
-    C -->|Context Retrieval| D["🤖 Anomaly Reasoning Agent"]
-    B -->|Real-time Event| D
-    end
 
-    subgraph "Action Layer"
+    C -->|Context| D["🤖 Anomaly Reasoning Agent"]
+
+    B -->|Current Event| D
+
     D -->|Decision| E["⚡ Response Orchestrator"]
-    E -->|Command| F["🛰️ System Recovery"]
-    end
 
-    subgraph "Feedback Loop"
-    F -->|Outcome| C
-    end
-🧱 Modular Designmemory_engine/: Adaptive store with temporal weighting & recurrence scoring.anomaly_agent/: The decision loop (LLM-assisted reasoning).response_orchestrator/: Maps decisions to concrete system commands.dashboard/: Real-time Streamlit visualization.🎯 Hackathon Tracks🤖 Track 1: Agentic AI (Applied GenAI)The Implementation: A reactive agent that doesn't just chat—it acts.Workflow: Live Input → Anomaly Detection → Memory Recall → Intelligent Decision → Automated ActionLatency: < 2s from detection to resolution.🧠 Track 2: The Frontier (Research & Deep Tech)The Research: Implementing the Dragon Hatchling (BDH) memory architecture.Innovation: We implemented Recurrence Resonance Scoring—a physics-inspired formula to reinforce repeated anomaly signals.Formula:$$Resonance = I_{base} \times (1 + 0.3 \times \log(1 + N_{recurrence})) \times D_{time}$$🛠️ Getting StartedPrerequisitesPython 3.9+Pip & Git⚡ Quick InstallBash# 1. Clone the repository
-git clone [https://github.com/sr-857/AstraGuard.git](https://github.com/sr-857/AstraGuard.git)
+    E -->|Actions| F["🛰️ System Recovery"]
+
+    F -->|Feedback| C
+
+    
+
+    D -.->|Reasoning Trace| G["📊 Dashboard"]
+
+    C -.->|Memory State| G
+
+    E -.->|Action Status| G
+
+```
+
+
+
+### Modular Architecture
+
+
+
+```
+
+AstraGuard/
+
+├── memory_engine/          # Adaptive memory with temporal weighting
+
+├── anomaly_agent/          # Decision loop + reasoning engine
+
+├── response_orchestrator/  # Workflow registry + action triggers
+
+├── encoder/                # Event embedding
+
+├── pathway_ingestion/      # Stream handlers
+
+├── dashboard/              # Streamlit UI
+
+├── tests/                  # Comprehensive test suite
+
+├── examples/               # Run-ready demos
+
+└── docs/                   # Architecture & design docs
+
+```
+
+
+
+---
+
+
+
+## 🚀 Getting Started
+
+
+
+### Prerequisites
+
+- Python 3.9+
+
+- pip & git
+
+
+
+### Installation
+
+
+
+```bash
+
+git clone https://github.com/sr-857/AstraGuard.git
+
 cd AstraGuard
 
-# 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Verify setup
+```
+
+
+
+### Verify Installation
+
+
+
+```bash
+
 python verify_install.py
-🎮 Run the System1. Start the Autonomous Agent:Bashpython examples/run_demo.py
-2. Launch the Mission Control Dashboard:Bashstreamlit run dashboard/app.py
-Tip: Toggle "Frontier Mode" in the dashboard to visualize neural activity!📊 Performance BenchmarkMetricTargetActual PerformanceStatusReaction Time< 2s~325ms🟢 ExceedsRetrieval Speed< 50ms~38ms🟢 ExceedsMemory UpdatesAutoReal-time🟢 ActiveFalse Positives< 5%~2.1%🟢 Stable🧪 Testing & ValidationWe maintain rigorous testing standards to ensure mission safety.Bash# Run full test suite
+
+```
+
+
+
+### Quick Start
+
+
+
+**Run the demo:**
+
+```bash
+
+python examples/run_demo.py
+
+```
+
+
+
+**Launch dashboard:**
+
+```bash
+
+streamlit run dashboard/app.py
+
+```
+
+
+
+> [!TIP]
+
+> Enable **Frontier Mode** in the dashboard to visualize adaptive memory flow and BDH neural activity!
+
+
+
+---
+
+
+
+## 📊 Performance Metrics
+
+
+
+| Metric | Target | Actual |
+
+|--------|--------|--------|
+
+| Detection → Decision → Action | < 2s | ~325ms |
+
+| Memory Retrieval | < 50ms | ~38ms |
+
+| Embedding Encoding | < 20ms | ~12ms |
+
+| Memory Updates | Auto | ✓ Real-time |
+
+| Explainability | LLM-assisted | ✓ Plain language |
+
+
+
+---
+
+
+
+## 🏆 Build-athon Tracks
+
+
+
+### 🤖 Track 1: Agentic AI (Applied GenAI)
+
+**Mission:** Reactive AI agent system for live threat detection and autonomous response.
+
+
+
+**Workflow:**
+
+```
+
+Live Input → Anomaly Detection → Memory Recall → Intelligent Decision → Automated Action
+
+```
+
+
+
+**Key Technologies:**
+
+- Pathway Engine for streaming
+
+- Adaptive memory with temporal weighting
+
+- LLM-assisted reasoning
+
+- Concrete action workflows
+
+
+
+### 🧠 Track 2: The Frontier (Research & Deep Tech)
+
+**Mission:** Biologically-inspired memory using Dragon Hatchling (BDH) architecture.
+
+
+
+**Innovation:**
+
+- Sparse neural activation
+
+- Evolving memory (not static context)
+
+- First-principles memory dynamics
+
+- Continuous learning without retraining
+
+
+
+---
+
+
+
+## 🔬 Experimental Feature: Recurrence Resonance
+
+
+
+**Concept:** Signal reinforcement inspired by physics
+
+
+
+**Formula:**
+
+```python
+
+resonance = base_importance × (1 + 0.3 × log(1 + recurrence_count)) × time_decay
+
+```
+
+
+
+**Impact:** ~10 lines of code, demonstrates first-principles thinking
+
+
+
+---
+
+
+
+## 🧪 Testing
+
+
+
+**Run all tests:**
+
+```bash
+
 pytest tests/ -v
 
-# Test memory dynamics specifically
+```
+
+
+
+**Run specific tests:**<div align="center">
+
+
+
+**🌐 [Landing SITE ](https://sr-857.github.io/AstraGuard/) | 📊 [Dashboard prototype](https://astraguarddashboard.lovable.app/) | 📚 [Documentation](docs/TECHNICAL.md) |📸 [Intro](https://drive.google.com/file/d/1pKkZosBJdk8tvfBrqNelPeWyY265eOcI/view?usp=drive_link) |🗂️ [GDrive](https://drive.google.com/drive/folders/1j3Ra1_q6v-lEavG40eR2mRzVLcqDYYKH)**
+
+
+
+</div>
+
+```bash
+
 pytest tests/test_memory_store.py -v
-📄 Citation & ResearchIf you use AstraGuard or its memory architecture in your research, please cite:Code snippet@misc{AstraGuardAI2025,
+
+pytest tests/test_recurrence_scorer.py -v
+
+```
+
+
+
+**Test coverage:**
+
+```bash
+
+pytest tests/ --cov=memory_engine --cov=anomaly_agent
+
+```
+
+
+
+---
+
+
+
+## 📚 Documentation
+
+
+
+**Core Documentation:**
+
+- 🏆 [**The A-to-Z Technical Master Report**](docs/A_TO_Z_REPORT.md)
+
+- 🚀 [Final Technical Report (Summary)](docs/FINAL_REPORT.md)
+
+- 📘 [Technical Documentation](docs/TECHNICAL.md)
+
+- 🏗️ [System Architecture & Technical Specifications](ARCHITECTURE.md)
+
+- 🌐 [Website Design Specification](WEBSITE_DESIGN.md)
+
+- 🎨 [Website Redesign - Round 2 Enhanced Proposal](WEBSITE_REDESIGN.md)
+
+
+
+**Additional Resources:**
+
+- 📖 [Pathway Documentation](https://pathway.com/docs)
+
+- 🐉 [Dragon Hatchling (BDH) Research](https://github.com/pathwaycom/bdh)
+
+- 🛠️ [LLM App Framework](https://github.com/pathwaycom/llm-app)
+
+
+
+---
+
+
+
+## 🔧 Configuration
+
+
+
+### Defense Thresholds
+
+Edit `classifier/fault_classifier.py`:
+
+- **Power Threat**: Voltage < 7.3V
+
+- **Thermal Threat**: Temperature > 32°C
+
+- **Attitude Threat**: |Gyro| > 0.05 rad/s
+
+
+
+### Memory Parameters
+
+Edit `memory_engine/memory_store.py`:
+
+- **Decay Lambda**: 0.1 (temporal decay rate)
+
+- **Max Capacity**: 10,000 events
+
+- **Retention**: 24 hours (critical events exempt)
+
+
+
+### Resonance Tuning
+
+Edit `memory_engine/recurrence_scorer.py`:
+
+- **Resonance Factor**: 0.3 (amplification for recurrence)
+
+
+
+---
+
+
+
+## 📈 System Components
+
+
+
+### Memory Engine (`memory_engine/`)
+
+- **Adaptive Memory Store**: Temporal weighting, auto-pruning, persistence
+
+- **Recurrence Scorer**: Signal reinforcement for repeated patterns
+
+- **Decay Policy**: Safe pruning with critical event protection
+
+- **Replay Engine**: Security flight recorder functionality
+
+
+
+### Anomaly Agent (`anomaly_agent/`)
+
+- **Decision Loop**: detect → recall → reason → act → learn
+
+- **Reasoning Engine**: Plain-language decision summaries
+
+- **Confidence Scorer**: Decision confidence calculation
+
+
+
+### Response Orchestrator (`response_orchestrator/`)
+
+- **Workflow Registry**: Maps decisions to concrete actions
+
+- **Action Implementations**: Real system commands (not just prints)
+
+- **Cooldown Manager**: Prevents action spam
+
+
+
+---
+
+
+
+## 🤝 Contributing
+
+
+
+1. Fork the repository
+
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+
+4. Push to branch (`git push origin feature/amazing-feature`)
+
+5. Open Pull Request
+
+
+
+**Guidelines:**
+
+- Follow PEP 8
+
+- Add type hints
+
+- Include docstrings
+
+- Write unit tests
+
+- Update documentation
+
+
+
+---
+
+
+
+## 📄 Citation
+
+
+
+```bibtex
+
+@misc{AstraGuardAI2025,
+
   author = {Roy, Subhajit},
+
   title = {AstraGuard AI: Streaming Anomaly Detection with Adaptive Memory},
+
   year = {2025},
+
   publisher = {GitHub},
+
   journal = {Synaptix Frontier AI Hackathon @ IIT Madras},
-  note = {Track 1: Agentic AI & Track 2: Frontier Tech}
+
+  howpublished = {\url{https://github.com/sr-857/AstraGuard}},
+
+  note = {Track 1: Agentic AI (Applied GenAI)}
+
 }
-<div align="center">Code is Liability. Intelligence is Asset.Made with ❤️ for the Synaptix Frontier AI HackathonDocumentation • Report • Video</div>
+
+```
+
+
+
+---
+
+
+
+## 📝 License
+
+
+
+MIT License - see [LICENSE](LICENSE)
+
+
+
+---
+
+
+
+## 🙏 Acknowledgments
+
+
+
+- **Pathway**: Real-time streaming engine
+
+- **Streamlit**: Dashboard framework
+
+- **scikit-learn**: ML algorithms
+
+- **NumPy**: Numerical computing
+
+- **pytest**: Testing framework
+
+
+
+---
+
+
+
+## 📧 Contact
+
+
+
+**Author**: Subhajit Roy  
+
+**Institution**: Indian Institute of Technology (IIT), Madras  
+
+**Hackathon**: Synaptix Frontier AI Hack  
+
+**Repository**: https://github.com/sr-857/AstraGuard
+
+
+
+---
+
+<div align="center">
+
+
+
+** 📚 [Documentation](docs/TECHNICAL.md) |📸 [Intro](https://drive.google.com/file/d/1pKkZosBJdk8tvfBrqNelPeWyY265eOcI/view?usp=drive_link) |🗂️ [GDrive](https://drive.google.com/drive/folders/1j3Ra1_q6v-lEavG40eR2mRzVLcqDYYKH)**
+
+
+
+</div>
+
+
+
+---
+
+
+
+**AstraGuard AI** | *Protecting spacecraft through intelligent autonomy* 🛰️✨
+
