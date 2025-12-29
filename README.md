@@ -205,7 +205,6 @@ pytest tests/ -v
 
 **Run specific tests:**<div align="center">
 
-**🌐 [Landing SITE ](https://sr-857.github.io/AstraGuard/) | 📊 [Dashboard prototype](https://astraguarddashboard.lovable.app/) | 📚 [Documentation](docs/TECHNICAL.md) |📸 [Intro](https://drive.google.com/file/d/1pKkZosBJdk8tvfBrqNelPeWyY265eOcI/view?usp=drive_link) |🗂️ [GDrive](https://drive.google.com/drive/folders/1j3Ra1_q6v-lEavG40eR2mRzVLcqDYYKH)**
 
 </div>
 ```bash
