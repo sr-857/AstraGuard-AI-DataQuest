@@ -296,18 +296,19 @@ Edit `memory_engine/recurrence_scorer.py`:
 
 ## 📄 Citation
 
+If you use AstraGuard AI in your research, please cite it using the following BibTeX:
+
 ```bibtex
-@misc{AstraGuardAI2025,
+@misc{AstraGuardAI,
   author = {Roy, Subhajit},
-  title = {AstraGuard AI: Streaming Anomaly Detection with Adaptive Memory},
+  title = {AstraGuard AI: Autonomous Fault Detection \& Recovery System for CubeSats},
   year = {2025},
-  publisher = {GitHub},
-  journal = {Synaptix Frontier AI Hackathon @ IIT Madras},
-  howpublished = {\url{https://github.com/sr-857/AstraGuard}},
-  note = {Track 1: Agentic AI (Applied GenAI)}
+  month = {11},
+  url = {https://github.com/sr-857/AstraGuard-AI},
+  note = {GitHub repository},
+  license = {MIT}
 }
 ```
-
 ---
 
 ## 📝 License
