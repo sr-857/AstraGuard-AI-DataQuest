@@ -31,6 +31,8 @@
 **📧 Contact**: [subhajitroy857@gmail.com](mailto:subhajitroy857@gmail.com)  
 **🌐 Live Site**: [https://sr-857.github.io/AstraGuard-AI-DataQuest/](https://sr-857.github.io/AstraGuard-AI-DataQuest/)
 
+[🛰️ AstraGuard AI DataQuest 2026 PDF](https://github.com/user-attachments/files/24697339/AstraGuard.AI.DataQuest.2026.Submission.pdf)
+
 ---
 
 </div>
