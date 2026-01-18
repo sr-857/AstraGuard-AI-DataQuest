@@ -519,5 +519,5 @@ and credibility.
 ---
 
 **Repository:** https://github.com/sr-857/AstraGuard  
-**Hackathon:** Synaptix Frontier AI Hack @ IIT Madras  
+**Hackathon:** DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur  
 **Round:** 2 - Enhanced Proposal

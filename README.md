@@ -3,7 +3,7 @@
   <img src="assets/logo.png" width="350" alt="AstraGuard AI Logo">
   <br />
 
-# 🛰️ AstraGuard AI - Synaptix Frontier AI Hack
+# 🛰️ AstraGuard AI - DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur
 **Autonomous Fault Detection & Recovery for CubeSats**
 *Powered by Pathway's Streaming Engine & Biologically-Inspired Memory*
 
@@ -331,7 +331,7 @@ MIT License - see [LICENSE](LICENSE)
 
 **Author**: Subhajit Roy  
 **Institution**: Indian Institute of Technology (IIT), Madras  
-**Hackathon**: Synaptix Frontier AI Hack  
+**Hackathon**: DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur  
 **Repository**: https://github.com/sr-857/AstraGuard
 
 ---

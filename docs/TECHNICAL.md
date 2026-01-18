@@ -1,7 +1,7 @@
 # AstraGuard AI - Technical Documentation
 
 **Version:** 2.0.0  
-**Hackathon:** Synaptix Frontier AI Hack @ IIT Madras  
+**Hackathon:** DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur  
 **Track:** Track 1 - Agentic AI (Applied GenAI)
 
 ---

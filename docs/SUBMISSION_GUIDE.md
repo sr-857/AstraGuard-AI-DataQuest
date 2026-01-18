@@ -1,6 +1,6 @@
 # 🚀 AstraGuard AI: Hackathon Submission Guide
 
-This document provides a "ready-to-submit" breakdown of AstraGuard AI for the **Synaptix Frontier AI Hackathon**. Use these sections to fill out your submission form.
+This document provides a "ready-to-submit" breakdown of AstraGuard AI for the **DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur**. Use these sections to fill out your submission form.
 
 ---
 

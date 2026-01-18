@@ -1,5 +1,5 @@
 # 🛰️ AstraGuard AI: Final Technical Report
-**Synaptix Frontier AI Hackathon @ IIT Madras**  
+**DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur**  
 **Track:** Track 1 - Agentic AI (Applied GenAI)  
 **Repository:** [https://github.com/sr-857/AstraGuard](https://github.com/sr-857/AstraGuard)  
 **Landing Site:** [https://ide-birch-01200854.figma.site/](https://ide-birch-01200854.figma.site/)

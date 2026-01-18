@@ -1,4 +1,4 @@
-# Synaptix Frontier AI Hack – Build-athon Proposal
+# DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur – Build-athon Proposal
 
 **Track:** Agentic AI (Applied GenAI)  
 **Project Title:** AstraGuard – Real-Time Threat Detection and Adaptive Response System  
@@ -188,4 +188,4 @@ This is not a research prototype. This is a **production-ready security agent** 
 
 **Repository:** https://github.com/sr-857/AstraGuard  
 **Contact:** sr-857@github.com  
-**Hackathon:** Synaptix Frontier AI Hack @ IIT Madras
+**Hackathon:** DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur

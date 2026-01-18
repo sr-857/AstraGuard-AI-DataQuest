@@ -1,6 +1,6 @@
 # AstraGuard Website Design Specification
 
-**Project:** Synaptix Frontier AI Hackathon - AstraGuard Website  
+**Project:** DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur - AstraGuard Website  
 **Purpose:** Present AstraGuard as an intelligent, real-time security agent platform  
 **Target Audience:** Smart students, researchers, and engineers evaluating system design
 
@@ -417,5 +417,5 @@ and credibility.
 ---
 
 **Repository:** https://github.com/sr-857/AstraGuard  
-**Hackathon:** Synaptix Frontier AI Hack @ IIT Madras  
+**Hackathon:** DataQuest 2026 Indian Institute of Technology (IIT), Kharagpur  
 **Contact:** sr-857@github.com
