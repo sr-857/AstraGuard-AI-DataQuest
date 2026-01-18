@@ -17,10 +17,11 @@ import time
 import numpy as np
 from datetime import datetime
 
-# Add parent directory to path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Add src directory to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-from memory_engine import AdaptiveMemoryStore, RecurrenceScorer
+from rag.memory.memory_store import AdaptiveMemoryStore
+from rag.memory.recurrence_scorer import RecurrenceScorer
 
 
 def generate_telemetry_stream():

@@ -3,7 +3,7 @@ import os
 import pickle
 from typing import Dict, Tuple
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "anomaly_if.pkl")
+MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../configs/models/anomaly_if.pkl"))
 _MODEL = None
 
 def load_model():
